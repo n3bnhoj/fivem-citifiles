@@ -1,0 +1,22 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body x-data="main" x-show="display" x-init="listen()">
+	<div class="target-wrapper">
+	    <image id="eye1" src='https://cdn.discordapp.com/attachments/812747934272978975/818099024884138014/2f4cc42912e2d21d19393afc3fd11b70.png'style="height: auto;width: 44px; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"></image>
+        <image id="eye2" src='https://cdn.discordapp.com/attachments/812747934272978975/820007738796539934/2f4cc42912e2d21d19393afc3fd11b70.png' style="height: auto;width: 44px; position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"></image>
+        
+	  <div class="target-label-wrapper">
+		<div class="target-label">
+            <template x-for="value, key in target" :key="key">
+                <div @click="executeTarget(key)" class='target-item' id=''><i :class="value.icon" class='fa-fw fa-pull-left target-icon'></i><span x-text="value.label"></span></div>
+            </template>
+        </div>
+	  </div>
+	</div>
+  </body>
+  <script src="./js/app.js"></script>
+</html>

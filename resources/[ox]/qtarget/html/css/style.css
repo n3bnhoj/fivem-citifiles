@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+
+.target-eye {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	font-size: 3vh;
+}
+
+.target-label-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: 3vh;
+	margin-top: -1.35vh;
+}
+
+.target-label {
+	list-style: none;
+	font-size: 1.5vh;
+	font-family: 'Ubuntu';
+	color: rgb(199, 243, 148);
+	text-transform: uppercase;
+	user-select: none;
+	white-space: nowrap;
+	line-height: 1.5vh;
+	padding-left: 0.2vh;
+}
+
+.target-icon {
+	color: rgb(199, 243, 148);
+}
+
+.target-eye-active {
+	color: rgb(199, 243, 148);
+}
+
+.target-eye-default {
+	color: rgb(255, 255, 255);
+}
+
+.target-item {
+	
+	border: 0px;
+	
+	border-radius: 0.2vh;
+	width: 25vh;
+	margin-bottom: 0.50vh;
+	display: flex;
+	align-items: center;
+	padding-left: 1vh;
+	height: 2.16vh;
+	transition: all 0.15s ease-in-out;
+}
+
+.target-item:hover {
+	
+	border-left: 0.2vh solid #86fb82;
+	transform: scale(1.05);
+}
